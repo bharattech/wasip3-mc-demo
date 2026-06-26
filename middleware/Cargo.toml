@@ -1,0 +1,11 @@
+[package]
+name = "middleware"
+edition = "2021"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wit-bindgen = { version = "0.54.0", features = ["async-spawn", "inter-task-wakeup"] }
+oxiwhisper = "0.1.1"

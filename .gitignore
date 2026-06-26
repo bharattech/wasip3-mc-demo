@@ -1,0 +1,7 @@
+backend/testdata/ggml-tiny.bin
+backend/testdata/jfk.wav
+backend/testdata/output.wav
+frontend/testdata/ggml-tiny.bin
+frontend/testdata/jfk.wav
+middleware/testdata/ggml-tiny.bin
+middleware/testdata/jfk.wav

@@ -1,0 +1,14 @@
+version: 2.4.0
+build:
+  command: "cargo build --target wasm32-wasip2 --release"
+  component_path: "target/wasm32-wasip2/release/frontend.wasm"
+  
+dev:
+  wasip3: true
+  address: "0.0.0.0:8000"
+  volumes:
+    - host_path: ./testdata
+      guest_path: /data
+
+workload:
+  allowedHosts: [ "*" ]
